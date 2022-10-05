@@ -1,37 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
 
-@media (max-width:600px){
-    .cards{
-      display: block;
-    }
-    #imagem img{
-      height: 500px;
-    }
-    
-    }
-    #nav img{
-      margin-left: 34px;
-    }
-    
-    .section2{
-        display: inline-block;
-    }
-
-    .container{
-      background-color: antiquewhite;
-      color: rgb(238, 158, 18);
-      border-color: red;
-      margin: 12px 2px 3px;
-      border-radius: 2px;
-    }
-    summary{
-      font-size: medium;
-      font-style: italic;
-      margin: 12px 9px 0px;
-      color: rgb(57, 111, 238);
-      right: 23px;
-      top: 34px;
-    }
 
 :root{
     color:hsl(207, 19%, 9%);
