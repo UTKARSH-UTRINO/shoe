@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
+
+@media (max-width:600px){
+    .cards{
+      display: block;
+    }
+    #imagem img{
+      height: 500px;
+    }
+    
+    }
+    #nav img{
+      margin-left: 34px;
+    }
+    
+    .section2{
+        display: inline-block;
+    }
+
+    .container{
+      background-color: antiquewhite;
+      color: rgb(238, 158, 18);
+      border-color: red;
+      margin: 12px 2px 3px;
+      border-radius: 2px;
+    }
+    summary{
+      font-size: medium;
+      font-style: italic;
+      margin: 12px 9px 0px;
+      color: rgb(57, 111, 238);
+      right: 23px;
+      top: 34px;
+    }
+
+:root{
+    color:hsl(207, 19%, 9%);
+    color:hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142 90% 61%);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*{
+  font-family: 'Comic Neue', cursive;
+  font-size: bolder;
+}
+.cards{
+  margin-left: 10px;
+  border-radius: 2px;
+  display: flex;
+  float:right;
+  content-visibility: 2px;
+}
+.section1{
+    display: flex;
+}
+
+body{
+    
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    /* background:hsl(207, 19%, 9%); */
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+
+}
+.card{
+    color:hsl(0, 0%, 100%);
+    background-image:url(maxim-hopman-8cT5ja0P_N4-unsplash.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    font-size: medium; 
+    border-radius: 0.5rem;
+     overflow: hidden;
+
+    transition:transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within{
+    transform: scale(1.05);
+}
+
+.card-content{
+    --padding:1.5rem;
+    padding: var(--padding);
+    background:linear-gradient(
+        hs1(0 0% 0% / 0),
+        hs1(20 0% 0% / .3) 10%,
+        hs1(0 0% 0% / 1)
+    );
+}
+
+
+
+.card:focus-within .card-content > *:not(.card-title){
+    transition-duration: 0ms;
+}
+
+.card-title{
+    position: relative;
+    width: max-content;
+    
+}
+
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    background: var(--clr-accent-400);
+    width: calc(100% + var(--padding));
+    bottom: -2px;
+    left: calc(var(--padding)* -1);
+    bottom:0;
+    
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after{
+    transform: scaleX(1);
+}
+
+.card-body{
+    color: rgb(255, 255, 255 / 0.85)
+}
+
+@media (hover){
+    .card-content{
+        
+    transform: translateY(65%);
+    transition:transform 500ms ease;
+    transition-delay: 500ms;
+    }
+
+    .card:hover .card-content,
+.card:focus-within .card-content{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.card:focus-within .card-content{
+    transition-duration: 0ms;
+}
+
+.card-content > *:not(.card-title){
+    opacity: 0;
+    transition:  opacity 500ms linear;
+}
+
+.card:hover .card-content > *:not(.card-title),
+.card:focus-within .card-content > *:not(.card-title){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+.card-title::after{
+    transform: scaleX(0);
+}
+
+}
+
+
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(207, 19%, 9%);
+    background-color: hsl(142 90% 61%);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus{
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* 
+@media(prefers-reduced-motion: reduce){
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms
+    !important;
+    animation-iteration-count: 
+    !important;
+    transition-duration: 0.01ms
+    !important;
+    scroll-behavior: auto !important;
+
+  }
+} */
+
+.card2{
+    color:hsl(0, 0%, 100%);
+    background-image:url(mojtaba-mosayebzadeh-CFYS5qMSuKo-unsplash.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    font-size: medium; 
+    border-radius: 0.5rem;
+     overflow: hidden;
+
+    transition:transform 500ms ease;
+}
+
+.card2:hover,
+.card2:focus-within{
+    transform: scale(1.05);
+}
+
+.card2-content{
+    --padding:1.5rem;
+    padding: var(--padding);
+    background:linear-gradient(
+        hs1(0 0% 0% / 0),
+        hs1(20 0% 0% / .3) 10%,
+        hs1(0 0% 0% / 1)
+    );
+}
+
+
+
+.card2:focus-within .card2-content > *:not(.card2-title){
+    transition-duration: 0ms;
+}
+
+.card2-title{
+    position: relative;
+    width: max-content;
+    
+}
+
+.card2-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    background: var(--clr-accent-400);
+    width: calc(100% + var(--padding));
+    bottom: -2px;
+    left: calc(var(--padding)* -1);
+    bottom:0;
+    
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card2:hover .card2-title::after,
+.card2:focus-within .card2-title::after{
+    transform: scaleX(1);
+}
+
+.card2-body{
+    color: rgb(255, 255, 255 / 0.85)
+}
+
+@media (hover){
+    .card2-content{
+        
+    transform: translateY(65%);
+    transition:transform 500ms ease;
+    transition-delay: 500ms;
+    }
+
+    .card2:hover .card2-content,
+.card2:focus-within .card2-content{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.card2:focus-within .card2-content{
+    transition-duration: 0ms;
+}
+
+.card2-content > *:not(.card2-title){
+    opacity: 0;
+    transition:  opacity 500ms linear;
+}
+
+.card2:hover .card2-content > *:not(.card2-title),
+.card2:focus-within .card2-content > *:not(.card2-title){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+.card2-title::after{
+    transform: scaleX(0);
+}
+
+}
+
+
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(207, 19%, 9%);
+    background-color: hsl(142 90% 61%);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus{
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* 
+@media(prefers-reduced-motion: reduce){
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms
+    !important;
+    animation-iteration-count: 
+    !important;
+    transition-duration: 0.01ms
+    !important;
+    scroll-behavior: auto !important;
+
+  }
+} */
+
+
